@@ -1,0 +1,31 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map_app{
+  display: flex;
+}
+
+#myMap{
+  /* display: inline-block; */
+  /* text-align: left; */
+  width: 50%;
+  height: 50%;
+  
+}
+
+.school_select{
+  /* display: inline-block; */
+  /* text-align: right; */
+  width: 50%;
+  /* margin: auto 10px auto; */
+}
+
+.title{
+  font-size: 15px;
+}
