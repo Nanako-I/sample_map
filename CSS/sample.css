@@ -1,5 +1,8 @@
 
-
+/* 地図表示のためにheight:100%;を設定 */
+html{
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -9,13 +12,14 @@ body {
 
 .map_app{
   display: flex;
+  height: 100%;
 }
 
 #myMap{
   /* display: inline-block; */
   /* text-align: left; */
   width: 50%;
-  height: 50%;
+  height: 100%;
   
 }
 
@@ -28,4 +32,67 @@ body {
 
 .title{
   font-size: 15px;
+}
+
+/* ---------------------------------------------
+　　　　　　　　　　学校別情報
+--------------------------------------------- */
+
+.toyosyou{
+  /* visibility:  hidden; */
+  display: none;
+}
+
+.izushi_tokubetsu{
+  display: none;
+}
+
+.msg:nth-child(odd){
+  background: #f0e68c;
+  margin-left: auto;
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 20px 0 auto;
+}
+
+.msg:nth-child(odd):before {
+  content: "";
+  /* borderで三角形を作る */
+  border: 10px solid transparent;
+  /* border-left:で右向きの三角形を作る↓ */
+  border-left: 30px solid #f0e68c;
+  /* 配置する */
+  position: absolute;
+  /* 上から50％ */
+  top: 50%;
+  /* 四角の右横に吹き出しをつけるため、-24PXと指定 */
+  right: -24px;
+  /* transform: translateX(-50%); */
+}
+
+.msg:nth-child(even){
+  background: #ffb6c1;
+  margin-right: auto;
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto 0 20px;
+}
+
+.msg:nth-child(even):before {
+  content: "";
+  /* borderで三角形を作る */
+  border: 10px solid transparent;
+  /* border-right:で左向きの三角形を作る↓ */
+  border-right: 30px solid #ffb6c1;
+  /* 配置する */
+  position: absolute;
+  /* 上から50％ */
+  top: 50%;
+  /* 四角の左横に吹き出しをつけるため、-24PXと指定 */
+  left: -24px;
+  /* transform: translateX(-50%); */
 }
