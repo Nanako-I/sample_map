@@ -32,12 +32,21 @@ body {
 
 .title{
   font-size: 15px;
+  margin: 20px;
+  width: 500px;
+}
+#select{
+  margin: 20px;
 }
 
 /* ---------------------------------------------
 　　　　　　　　　　学校別情報
 --------------------------------------------- */
 
+.school_info{
+  /* display: none; */
+  margin: 20px;
+}
 .toyosyou{
   /* visibility:  hidden; */
   display: none;
@@ -46,6 +55,10 @@ body {
 .izushi_tokubetsu{
   display: none;
 }
+
+.seiwaen{
+  display: none;
+} 
 
 .msg:nth-child(odd){
   background: #f0e68c;

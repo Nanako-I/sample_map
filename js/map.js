@@ -1,3 +1,20 @@
+  
+      //   const firebaseConfig = {
+          
+  
+      // };
+      
+      // var msg="";
+      // // var msg= ["uname","text"];
+      // console.log(msg);
+      // var key="";
+      // // var key="key";
+      // console.log(key);
+      // const app = initializeApp(firebaseConfig);
+
+      // const db = getDatabase(app);
+      // const dbRef = ref(db, 'dev245');
+    
     //****************************************
     //成功関数
     //****************************************
@@ -56,6 +73,12 @@ map.entities.push(pushpin_seiwaen);
   alert("click");
   $(".seiwaen").toggle(1000);
             });
+
+
+      // $(document).ready(function(){
+
+
+      // })
     };
 
 
@@ -119,9 +142,3 @@ map.entities.push(pushpin_seiwaen);
     function GetMap() {
       navigator.geolocation.getCurrentPosition(mapsInit, mapsError, set);
     }
-// $("pin_toyosyou").on("click",function(){
-// alert(click);
-// });
-// map.Events.addHandler(pin_toyosyou,"click",function(){
-// alert(click);
-    // });
